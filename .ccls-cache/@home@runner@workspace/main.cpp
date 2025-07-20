@@ -88,7 +88,7 @@ int main() {
     char continueChoice;
 
     cout << "Rectangle Properties Calculator" << endl;
-    cout << "===============================" << endl << endl;
+    cout << endl << endl;
 
     do {
         //Get validated input from user.
