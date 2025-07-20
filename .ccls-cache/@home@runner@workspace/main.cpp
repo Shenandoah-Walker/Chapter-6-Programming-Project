@@ -48,7 +48,7 @@ int main() {
     int accidents, lowestAccidents;
 
     cout << "Safest Driving Area Analysis" << endl;
-    cout < << endl << endl;
+    cout << endl << endl;
     cout << "Enter accident data for 5 regions:" << endl << endl;
 
     // Ask the user for the accident data for the first region
@@ -94,15 +94,15 @@ void getRegInfo(string& regionName, int& accidents) {
     // Clear the input buffer for next getline call.
     cin.ignore();
 }
-
+//Check if the first value is less than or equal to the second value.
 bool isLower(int value1, int value2) {
     return value1 <= value2;
 }
-
+//Display the safest driving area results.
 void showLowest(string regionName, int accidents) {
     cout << "Safest Driving Area Results:" << endl << endl;
     cout << "Region: " << regionName << endl;
     cout << "Number of accidents: " << accidents << endl;
-    cout << "\n" << regionName << " is the safest driving area with " 
+    cout << "\n" << regionName << " is the safest driving area, with " 
          << accidents << " reported accidents." << endl;
 }
