@@ -7,7 +7,7 @@ double calcPerimeter(double length, double width);
 double calcArea(double length, double width);
 void displayProperties(double perimeter, double area);
 
-/**
+/*
 Function: getLength_Width
 Purpose: To get the length and width of a rectangle from the user and validate the input (ensure that the length and width are greater than 0).
 Parameters:
@@ -35,18 +35,48 @@ void getLength_Width(double& length, double& width) {
     } while (width <= 0);
 }
 
+/*
+Function: calcPerimeter
+Purpose: To calculate the perimeter of a rectangle given its length and width.
+Parameters:
+ -length: a double variable that stores the length of the rectangle.
+ -width: a double variable that stores the width of the rectangle.
+Returns: a double value that represents the perimeter of the rectangle.
+Preconditions: The length and width variables must contain positive values.
+Postconditions: None
+ */
 
 double calcPerimeter(double length, double width) {
     return 2 * length + 2 * width;
 }
 
+/*
+Function: calcArea
+Purpose: To calculate the area of a rectangle given its length and width.
+Parameters:
+ -length: a double variable that stores the length of the rectangle.
+ -width: a double variable that stores the width of the rectangle.
+Returns: a double value that represents the area of the rectangle.
+Preconditions: The length and width variables must contain positive values.
+Postconditions: None
+ */
 
 double calcArea(double length, double width) {
     return length * width;
 }
 
+/*
+Function: displayProperties
+Purpose: To display the perimeter and area of a rectangle.
+Parameters:
+ -perimeter: a double variable that stores the perimeter of the rectangle.
+ -area: a double variable that stores the area of the rectangle.
+Returns: None
+Preconditions: The perimeter and area variables must contain positive values.
+Postconditions: None
+ */
 
-void displayProperties(double perimeter, double area) {
+    void displayProperties(double perimeter, double area) {
     cout << "\nRectangle Properties:" << endl;
     cout << "Perimeter: " << perimeter << endl;
     cout << "Area: " << area << endl << endl;
