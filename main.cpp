@@ -4,6 +4,12 @@
 #include <iomanip>
 using namespace std;
 
+
+//Initialize the range of Fahrenheit temperatures to convert as global constants.
+const int minFahrenheit = 0;
+const int maxFahrenheit = 20;
+
+
 /*
 Function: getCelsius
 Purpose: Converts a Fahrenheit temperature to Celsius
@@ -20,9 +26,7 @@ double getCelsius(double fahrenheit) {
 
 int main() {
     
-    //Initialize the range of Fahrenheit temperatures to convert.
-    const int minFahrenheit = 0;
-    const int maxFahrenheit = 20;
+
     
     //Create a header for the table.
     cout << "Temperature Conversion Table" << endl;
