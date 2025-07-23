@@ -1,6 +1,4 @@
-/*Star Search Program
-  This program calculates a performer's score. Five judges each contribute a score, the highest and lowest score is dropped and the remaining three are averaged.
-*/
+//Star Search Program
 
 #include <iostream>
 #include <iomanip>
