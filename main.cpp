@@ -96,7 +96,7 @@ double getScore() {
     do {
         cin >> score;
         if (score < 0.0 || score > 10.0) {
-            cout << "Invalid score! Please enter a score between 0.0 and 10.0: ";
+            cout << "Invalid score. Please enter a score between 0.0 and 10.0: ";
         }
     } while (score < 0.0 || score > 10.0);
 
